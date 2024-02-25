@@ -15,7 +15,7 @@
 				<stk:isBatch>true</stk:isBatch>
 				<stk:purchasingRateVAT>high</stk:purchasingRateVAT>
 				<stk:sellingRateVAT>high</stk:sellingRateVAT>
-
+ 				<stk:quantity>5</stk:quantity>
 
 				<stk:name>{Title}</stk:name>
 				<stk:nameComplement>Text1</stk:nameComplement>
