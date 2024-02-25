@@ -1,0 +1,55 @@
+<dat:dataPack xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" xmlns:stk="http://www.stormware.cz/schema/version_2/stock.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" id="01" ico="123456" application="StwTest" version="2.0" note="Import skladové zásoby">
+	<!-- BEGIN LOOP -->
+	<dat:dataPackItem id="{ID}" version="2.0">
+		<!--  import zásob z Internetového obchodu  -->
+		<stk:stock version="2.0">
+			<stk:stockHeader>
+				<!-- typ skladove zasoby -->
+				<stk:stockType>card</stk:stockType>
+				<stk:code>{ID}</stk:code>
+				<stk:EAN>1234</stk:EAN>
+				<stk:PLU>{ID}</stk:PLU>
+				<stk:isSales>true</stk:isSales>
+				<stk:isSerialNumber>false</stk:isSerialNumber>
+				<stk:isInternet>true</stk:isInternet>
+				<stk:isBatch>true</stk:isBatch>
+				<stk:purchasingRateVAT>high</stk:purchasingRateVAT>
+				<stk:sellingRateVAT>high</stk:sellingRateVAT>
+
+
+				<stk:name>{Title}</stk:name>
+				<stk:nameComplement>Text1</stk:nameComplement>
+				<stk:unit>ks</stk:unit>
+				<stk:storage>
+					<typ:ids>01/01</typ:ids>
+				</stk:storage>
+				<stk:typePrice>
+					<typ:ids>SK</typ:ids>
+				</stk:typePrice>
+				<stk:purchasingPrice>0</stk:purchasingPrice>
+				<stk:sellingPrice payVAT="true">{Regular Price}</stk:sellingPrice>
+				<stk:limitMin>1</stk:limitMin>
+				<stk:limitMax>100</stk:limitMax>
+				<stk:mass>0.516</stk:mass>
+				<stk:count>5.0</stk:count>
+
+				<stk:volume/>
+				<!-- dodavatel -->
+				<stk:supplier>
+					<typ:id>25</typ:id>
+				</stk:supplier>
+				<stk:orderName/>
+				<stk:orderQuantity>0</stk:orderQuantity>
+				<stk:shortName>Sico s1478</stk:shortName>
+				<stk:guaranteeType>year</stk:guaranteeType>
+				<stk:guarantee>2</stk:guarantee>
+				<stk:producer>Čermák s.r.o.</stk:producer>
+				<stk:yield>646000</stk:yield>
+				<stk:description>Popis 1</stk:description>
+				<stk:description2>Popis 2</stk:description2>
+				<stk:note>Načteno z Internetového obchodu.</stk:note>
+			</stk:stockHeader>
+		</stk:stock>
+	</dat:dataPackItem>
+	<!-- END LOOP -->
+</dat:dataPack>
